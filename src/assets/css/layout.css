@@ -1,0 +1,1234 @@
+@font-face {
+  font-family: motley;
+  font-display: fallback;
+  src: url("./Motley\ Forces.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: donuts;
+  font-display: fallback;
+
+  src: url("./EncodeSansExpanded-Medium.ttf") format("truetype");
+}
+
+body {
+  color: var(--blue);
+  height: 100vh;
+  background-color: var(--grey);
+  font-family: "donuts";
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.navleftside {
+  font-size: x-large;
+  font-family: motley;
+}
+
+.radioButtons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-evenly;
+  gap: 1rem;
+}
+
+.radiobutt {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+
+input[type="radio"] {
+  width: 1rem;
+  height: 1rem;
+}
+.invalid-feedbackk {
+  display: block;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+  color: var(--bs-form-invalid-color);
+}
+
+.blue-butt {
+  background-color: var(--blue);
+  color: var(--grey);
+  border: var(--blue);
+  width: fit-content;
+  padding: 0.3em 2em;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.blue-butt:active {
+  background-color: var(--grey);
+  color: var(--blue);
+  filter: brightness(1);
+}
+
+.myInput {
+  width: 50%;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.3rem 1rem;
+  border-radius: 0.5em;
+  border: solid;
+  border-color: var(--blue);
+  /* max-width:5rem; */
+}
+
+form {
+  width: 100%;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  align-items: center; */
+
+  padding: 4rem 20rem;
+}
+
+.pagination {
+  margin: 20px;
+
+  /* bottom: 0;
+    position: absolute; */
+}
+
+.homepage-container {
+  /* background-image: url(../Ali\ Maaloul\ -\ FootyRenders.png); */
+  background-image: url(../shika.png);
+  /* height: 100%; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  /* justify-content: space-between; */
+  /* display: flex;
+  flex-direction: row; */
+  /* margin: 0; */
+}
+
+.meet-the-teams {
+  background-color: white;
+  /* height: 100vh; */
+  /* height: 100%; */
+  /* position: absolute; */
+  /* right: 0; */
+  padding: 1rem;
+  overflow: hidden;
+  width: 15%;
+
+  /* gap: 5rem; */
+  /* position: relative;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+.logos-sidebar {
+  width: 50%;
+  height: auto;
+}
+
+/* .slider-container {
+  overflow: hidden;
+  height: 200px; /* Adjust as needed */
+/* /* } */
+
+.image-slider {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+  /* justify-content: center; */
+  align-items: center;
+  display: flex;
+  animation: slideAnimation 10s linear infinite;
+}
+
+@keyframes slideAnimation {
+  0% {
+    transform: translateY(105%);
+  }
+  100% {
+    transform: translateY(-105%);
+  }
+}
+
+.matchdetailscards-home {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.matchdetails-home {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  /* position: relative; */
+}
+
+ul {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+}
+
+.navrightside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+}
+
+.loginHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 1.5rem 1.5rem;
+  /* margin: 3rem auto ; */
+
+  background-color: white;
+}
+
+button {
+  text-decoration: none;
+}
+
+.navbar {
+  width: 100%;
+  background-color: var(--blue);
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  padding: 1rem;
+}
+
+.myForm {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  /* padding: 2rem; */
+}
+
+.editForm {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+}
+
+:root {
+  --blue: #012f98;
+  --white: #f3f7f8;
+  --grey: #e5e5ed;
+}
+
+.match-details-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.match-details-container {
+  flex-direction: column;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid #7b80ae; */
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 2rem;
+  border: 1px solid var(--blue);
+
+  width: 50%;
+  /* height: 10%; */
+  /* mido */
+  /* width: 100%; */
+  margin: 20px auto;
+  background-color: transparent;
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+
+  transition: box-shadow 0.3s ease-in-out;
+
+  /* box-shadow: 0px 1px 236px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 236px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 236px -1px rgba(0, 0, 0, 0.75); */
+}
+
+.page-link {
+  color: var(--blue);
+  background-color: white;
+  border-color: white;
+}
+
+.active > .page-link {
+  color: white;
+  background-color: var(--blue);
+  border-color: var(--blue);
+}
+
+.page-item:first-child .page-link {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.page-item:last-child .page-link {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.match-details-container:hover {
+  /* flex-direction: column;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid #7b80ae; */
+  /* padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 2rem;
+  border: 1px solid var(--blue);
+
+  width: 50%;
+  /* height: 10%; */
+  /* margin: 20px auto;
+  background-color: transparent;
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");  */
+
+  box-shadow: 0px 1px 50px -10px var(--blue);
+  -webkit-box-shadow: 0px 1px 50px -10px var(--blue);
+  -moz-box-shadow: 0px 1px 50px -10px var(--blue);
+}
+
+.team-logo {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  overflow: hidden;
+  /* border-radius: 100%; */
+  /* momkn lw 3aiz a5lih circular */
+  background-color: transparent;
+}
+
+.home-logo {
+  margin-right: 10px;
+  justify-content: start;
+  background-color: transparent;
+  /* margin-left: 10px; */
+}
+
+.away-logo {
+  margin-left: 10px;
+  background-color: transparent;
+  /* margin-right: 10px; */
+}
+
+.time-container {
+  /* font-family: "timeScore";
+  font-weight: bolder; */
+  font-weight: bolder;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  /* height: 60px; */
+  width: 70px;
+  padding: 8px;
+  background-color: #e0e0e0;
+  display: inline-block;
+  text-align: center;
+  background-color: var(--grey);
+}
+
+.upper-match-div {
+  display: flex;
+  border: 1px solid var(--blue);
+  border-radius: 100px;
+  padding: 1%;
+  background-color: var(--blue);
+  color: var(--grey);
+  margin-bottom: 5px;
+}
+
+.main-match-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-self: center;
+  margin: 0 auto;
+  border: 1px solid var(--grey);
+  border-radius: 100px;
+  padding: 1%;
+  width: 100%;
+  background-color: var(--blue);
+}
+
+.match-info {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home-team-pack {
+  color: var(--grey);
+  margin-left: 50px;
+  position: relative;
+  align-self: flex-start;
+  /* align-self: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+
+.away-team-pack {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 50px;
+  width: 30%;
+  color: var(--grey);
+}
+
+.lower-match-div {
+  color: var(--blue);
+  background-color: var(--grey);
+  display: flex;
+  margin-top: 1%;
+}
+
+.stadLogo {
+  width: 70px;
+  height: 100px;
+  object-fit: contain;
+  overflow: hidden;
+  border-radius: 100%;
+  /* background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+  background-color: var(--grey); */
+}
+
+.stadPack {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: -20px;
+}
+
+.stadName {
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.refLogo {
+  width: 70px;
+  height: 40px;
+  /* background-color: var(--grey);
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png"); */
+}
+
+.sideRefLogo {
+  width: 40px;
+  height: 40px;
+  /* background-color: var(--grey);
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png"); */
+  margin-right: 10px;
+}
+
+.allRefPack {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-self: center;
+  margin: 0 auto;
+  padding: 1%;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.refPack {
+  margin-left: 50px;
+  position: relative;
+  align-self: flex-start;
+  /* align-self: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+
+.sideRefPack {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 50px;
+  width: 30%;
+}
+
+.testBut {
+  border: 1px solid var(--blue);
+  border-radius: 100px;
+  padding: 1%;
+}
+
+.home-club-name {
+  font-size: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.away-club-name {
+  font-size: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+}
+
+@media only screen and (min-width: 414px) and (max-width: 700px) {
+  .match-details-container {
+    width: 90%;
+  }
+
+  .bill-paying {
+    justify-content: center !important;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .home-logo {
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    margin-right: 0px;
+  }
+
+  .away-logo {
+    height: 40px;
+    width: 40px;
+    margin-left: 0px;
+  }
+
+  .home-team-pack {
+    width: 50px;
+    height: 50px;
+    align-self: center;
+    position: relative;
+    margin-left: 60px;
+  }
+
+  .away-team-pack {
+    width: 50px;
+    height: 50px;
+    align-self: center;
+  }
+
+  .home-club-name {
+    /* font-size: 8px; */
+    font-size: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .away-club-name {
+    /* font-size: 8px; */
+    font-size: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+  }
+
+  .sideRefName {
+    white-space: nowrap;
+  }
+
+  .refPack {
+    margin-left: 10%;
+    /* margin-right: 1%; */
+  }
+
+  .sideRefPack {
+    /* margin-left: 10%; */
+    margin-right: 10%;
+  }
+
+  .match-details-container:hover {
+    /* flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+    padding: 3rem;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid #7b80ae; */
+    /* padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 2rem;
+    border: 1px solid var(--blue); */
+
+    /* width: 90%; */
+    /* height: 10%; */
+    /* margin: 20px auto;
+    background-color: transparent;
+    background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png"); */
+
+    box-shadow: 0px 1px 50px -10px var(--blue);
+    -webkit-box-shadow: 0px 1px 50px -10px var(--blue);
+    -moz-box-shadow: 0px 1px 50px -10px var(--blue);
+  }
+
+  .upper-match-div {
+    padding: 0.5rem;
+  }
+
+  .time-container {
+    /* height: 50px; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+
+    width: 30%;
+    border-radius: 100px;
+    padding: 1%;
+    font-size: 70%;
+    align-self: first baseline;
+    margin-top: 5px;
+    white-space: nowrap;
+    font-weight: bolder;
+  }
+
+  .meet-the-teams {
+    display: none;
+    /* width: 0%; */
+  }
+  .match-details-home {
+    width: 100%;
+  }
+  .homepage-container {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 900px) {
+  .time-container {
+    height: 70px;
+    width: 70px;
+  }
+
+  .match-details-container {
+    width: 90%;
+  }
+
+  .match-details-container:hover {
+    /* flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+    padding: 3rem;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid #7b80ae; */
+    /* padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 2rem;
+    border: 1px solid var(--blue);
+
+    width: 90%;
+    /* height: 10%; */
+    /* margin: 20px auto;
+    background-color: transparent;
+    background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");  */
+
+    box-shadow: 0px 1px 50px -10px var(--blue);
+    -webkit-box-shadow: 0px 1px 50px -10px var(--blue);
+    -moz-box-shadow: 0px 1px 50px -10px var(--blue);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  form {
+    padding: 2rem;
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  .time-container {
+    height: 70px;
+    width: 70px;
+  }
+
+  .match-details-container {
+    width: 80%;
+  }
+
+  .match-details-container:hover {
+    /* flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+    padding: 3rem;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    /* border: 1px solid #7b80ae;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 2rem;
+    border: 1px solid var(--blue);
+
+    width: 90%;
+    /* height: 10%; */
+    /* margin: 20px auto;
+    background-color: transparent;
+    background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png"); */
+
+    box-shadow: 0px 1px 50px -10px var(--blue);
+    -webkit-box-shadow: 0px 1px 50px -10px var(--blue);
+    -moz-box-shadow: 0px 1px 50px -10px var(--blue);
+  }
+}
+
+ul {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+}
+
+.navrightside {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 1rem;
+  /* padding: 1rem 2rem; */
+}
+
+@media (max-width: 992px) {
+  .navrightside {
+    justify-content: center;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navrightsideitem {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navrightsideitem:hover {
+  opacity: 0.5;
+}
+
+.activepagenavbar {
+  opacity: 0.5;
+}
+
+.navleftside {
+  /* padding: 1rem 2rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.loginHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 1.5rem 1.5rem;
+  /* margin: 3rem auto ; */
+
+  background-color: white;
+}
+
+button {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.navbar {
+  width: 100%;
+  background-color: var(--blue);
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  color: var(--white) !important;
+}
+
+.navbar-brand,
+.nav-link,
+.navbar-toggler {
+  color: var(--white);
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* .myForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+.sidebar {
+  background: var(--blue);
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  /* left: ${({ sidebar }) => (sidebar ? "0" : "-100%")}; */
+  /* padding: 1rem; */
+  transition: 700ms;
+  z-index: 10;
+}
+
+.btnclose {
+  color: var(--grey);
+  cursor: pointer;
+  width: 3rem;
+  height: 2rem;
+}
+
+.crsp {
+  cursor: pointer;
+}
+
+.sidebar-wrap {
+  width: 100%;
+}
+
+.sidebar-up {
+  display: flex;
+  justify-content: end;
+  padding: 1rem 1rem;
+  /* margin-bottom: 0rem; */
+  padding-bottom: 2rem;
+  border-bottom: solid var(--grey);
+}
+
+.sidebar-entries {
+  display: flex;
+  flex-direction: column;
+  /* gap: 2rem; */
+  margin-top: 2rem;
+}
+
+.sidebar-entry {
+  cursor: pointer;
+  width: 100%;
+  padding: 1rem;
+}
+
+.sidebar-entry:hover {
+  background-color: var(--grey);
+  color: var(--blue);
+}
+
+.avatar-image {
+  width: 3rem;
+  height: auto;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.seat {
+  border: none;
+  /* border-radius: 1rem; */
+  /* padding: 1%; */
+
+  width: auto;
+  height: 2rem;
+  /* height: 0; */
+  /* padding-top: 100%; */
+  background-color: var(--bs-secondary);
+  cursor: pointer;
+  transition: transform 0.3s ease-out;
+  border-radius: 5%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+
+  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.6);
+}
+
+.disabled-seat {
+  width: auto;
+  height: 2rem;
+  /* padding-top: 100%; */
+  background-color: var(--bs-danger);
+  border-radius: 5%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+
+  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.6);
+}
+
+.booking-page {
+  padding-top: 2rem;
+  border-radius: 30px;
+  border: var(--blue) solid;
+  margin: 2rem;
+}
+
+.seat:active {
+  animation: beat 0.3s ease-out;
+}
+
+.seat:hover {
+  opacity: 0.5;
+}
+
+.booking-container {
+  /* border: solid var(--blue); */
+  /* border-radius: 3rem; */
+  /* padding: 5%; */
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: 2rem 0rem;
+  width: 85%;
+}
+
+.booking-grid {
+  /* flex-direction: row; */
+  /* display: flex;
+    flex-direction: column;
+    gap: 1rem;*/
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  gap: 1rem 1%;
+  /* text-overflow:; */
+  font-size: 0.2em;
+}
+
+.booking-grid input[type="checkbox"]:checked + .seat {
+  background-color: var(--bs-success);
+}
+
+.index-seats-alpha {
+  left: -20px;
+  display: flex;
+  flex-direction: column;
+  /* height: 100%; */
+  position: absolute;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  /* padding-bottom: 2.2rem; */
+}
+
+.index-alpha {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bs-gray-500);
+  /* gap: 1rem; */
+  /* height: 3rem; */
+}
+
+.index-seats-numeric {
+  bottom: -30px;
+  display: grid;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+
+.index-numeric {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.2rem;
+  color: var(--bs-gray-500);
+}
+
+/* .booking-grid-row{
+    display: flex;
+    gap: 0.2%;
+    justify-content: center;
+} */
+
+.colorguide {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.onecolorguide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: smaller;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  /* background-color: #bbb; */
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.buyTickets-button {
+  padding: 1em;
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+  /* border: 2px solid var(--blue); */
+  overflow: hidden;
+  border-end-end-radius: 27px;
+  color: var(--blue);
+  transition: all 0.8s ease-in-out;
+  width: 100%;
+  border: none;
+  border-top: solid;
+  border-bottom-left-radius: 27px;
+}
+
+.btn-txt {
+  z-index: 1;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.type1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.8s ease-in-out;
+  background-color: var(--blue);
+  /* border-radius: 3rem; */
+  visibility: hidden;
+  /* height: 10px;
+  width: 10px; */
+  height: 20px;
+  width: 2%;
+  z-index: -1;
+  border: none;
+}
+
+.buyTickets-button:hover {
+  box-shadow: 1px 1px 200px var(--grey);
+  color: var(--grey);
+  /* border: none; */
+}
+
+.reservation-bill-butt {
+  padding: 0.5em 1em;
+  border: none;
+  color: white;
+  width: fit-content;
+}
+
+.reservation-bill-butt:hover {
+  filter: brightness(1.5);
+}
+
+.type1:hover::after {
+  visibility: visible;
+  transform: scale(100) translateX(2px);
+}
+
+/******** Deletion Page **********/
+.delete-admin-page-text-div {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 2rem;
+}
+.main-text-class-text {
+  font-size: 2.5rem;
+  font-weight: 640;
+  text-decoration: none;
+}
+/**Division of searchbar and results **/
+.delete-admin-page-search-div-searchbar-table {
+  width: 100%;
+  margin-top: 1rem;
+}
+.delete-admin-page-search-div-searchbar-table th {
+  margin-bottom: 0.3rem;
+}
+.delete-admin-page-search-div-searchbar-table td {
+  padding-bottom: 0.25rem;
+  padding-top: 0.25rem;
+}
+.delete-admin-page-search-div-searchbar-table td:first-child {
+  padding-left: 0.25rem;
+}
+.delete-admin-page-search-div-searchbar-table tr:nth-child(even) {
+  background-color: #fffdfd;
+}
+.searchbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.searchbar-nafso {
+  width: 100%;
+  margin-right: 0.5rem;
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+  .col_1 {
+    display: none;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: collapse;
+  }
+}
+
+/** admin page khelset **/
+.your-tickets {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 4%;
+  margin: 2rem 0;
+  font-size: 70%; */
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 100%;
+  padding: 2rem;
+  gap: 2rem 1rem;
+}
+.danger-butt-disabled {
+  border: none;
+  background-color: var(--bs-danger);
+  color: white;
+  padding: 0.2rem 1rem;
+  /* border-radius: 5px; */
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.danger-butt {
+  border: none;
+  background-color: var(--bs-danger);
+  color: white;
+  padding: 0.2rem 1rem;
+  /* border-radius: 5px; */
+}
+.danger-butt:hover {
+  filter: brightness(1.5);
+}
+.danger-butt:active {
+  animation: beat 0.3s ease-in-out;
+}
+
+.bill-span {
+  color: var(--bs-gray);
+  text-align: center;
+  /* margin-bottom: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem; */
+  font-size: smaller;
+}
+.bill-paying {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.ticketid {
+  font-size: 10px;
+  font-weight: bold;
+}
+.offcanvas-body {
+  margin: 33% 0;
+  padding: 0;
+}
+
+.alertpopup {
+  transform: translateX(-50%);
+  left: 50%;
+  position: fixed;
+  top: 10px;
+  /* margin-left: 50%; */
+  /* margin-right: 50%; */
+  width: 78%;
+}
+
+.pagen {
+  display: flex;
+  justify-content: center;
+}
+:root {
+  --blue: #012f98;
+  --white: #f3f7f8;
+  --grey: #e5e5ed;
+  --bs-link-hover-color: var(--blue);
+}
