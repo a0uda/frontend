@@ -3,8 +3,8 @@ import Button from "./Button";
 import SearchBarCompList from "./SearchBarCompList";
 import { useEffect } from "react";
 import axios from "axios";
-import MyPagination from "../components/MyPagination";
-import AdminList from "../components/AdminList";
+import MyPagination from "./MyPagination";
+import AdminList from "./AdminList";
 
 const SearchBar = ({ UserArr, onDelete }) => {
   const [searchTerm, setSearchTerm] = useState("");

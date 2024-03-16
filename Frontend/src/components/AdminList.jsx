@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "./Button";
 import AdminRow from "./AdminRow";
-import Paginationn from "../components/Paginationn";
+import Paginationn from "./Paginationn";
 import { useState } from "react";
 const AdminList = ({ usersArray, onDelete, onInsert }) => {
   const [activePage, setActivePage] = useState(1); //kont 3amlha 2 leh ya mido AAO
