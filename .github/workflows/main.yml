@@ -23,11 +23,9 @@ jobs:
           pwd
           ls
           docker build -t dev-frontend -f Dockerfile.dev .
-
       - name: Run Frontend For Testing Dev files
         run: |
           docker run --rm dev-frontend
-
   build_prod:
     name: Build Frontend For Prod files
     runs-on: ubuntu-latest
