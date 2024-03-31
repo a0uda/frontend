@@ -23,8 +23,6 @@ jobs:
           pwd
           ls
           docker build -t dev-frontend -f Dockerfile.dev .
-      - name: Run npm ci
-        run: npm ci
       - name: Run Frontend For Testing Dev files
         run: |
           docker run --rm dev-frontend
