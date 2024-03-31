@@ -36,7 +36,7 @@ jobs:
 
       - name: Build Frontend For Prod files
         run: |
-          docker build -t aoudaa/dkr-frontend:latest -f .
+          docker build -t aoudaa/dkr-frontend:latest .
 
   deploy:
     name: Deploy Frontend For Prod files
