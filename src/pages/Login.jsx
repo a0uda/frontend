@@ -59,7 +59,7 @@ const Login = () => {
     try {
       console.log(values);
       const res = await axios.post(
-        "http://localhost:3001/api/user/login",
+        "https://redditech.me/backend/api/user/login",
         values
       );
       // console.log(res);
