@@ -4,3 +4,7 @@
 test("dummy tes", () => {
   expect(1).toBe(0);
 });
+
+test("dummy test", () => {
+  expect(1).toBe(1);
+});
