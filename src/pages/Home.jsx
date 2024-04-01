@@ -120,7 +120,7 @@ const Home = () => {
                 );
               })
             ) : (
-              <p>No matches soon</p>
+              <p>NO MATCHES</p>
             )}
           </div>
           <Paginationn
